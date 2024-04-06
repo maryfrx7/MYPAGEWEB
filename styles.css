@@ -3,41 +3,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
 
-button{
+
+.button-container {
+    position: relative;
+    display: inline-block;
+}
+
+.button-container:hover .push-effect {
+    transform: translateY(5px); 
+}
+
+.push-effect {
+    transition: transform 0.1s ease-in; 
+}
+
+button {
     width: 200px;
     height: 200px;
 }
 
-button.img1{
+button.img1 {
     background-image: url(images/img1.jpg);
     background-size: cover;
 }
-button.im1:hover{
+
+button.im1:hover {
     color: #ceb1404b;
+    
 }
-button.img2{
+
+button.img2 {
     background-image: url(images/img2.jpg);
     background-size: cover;
 }
-button.im2:hover{
+
+button.im2:hover {
     color: #ceb1404b;
 }
-button.img3{
+
+button.img3 {
     background-image: url(images/img3.jpg);
     background-size: cover;
 }
-button.im3:hover{
+
+button.im3:hover {
     color: #ceb1404b;
 }
-button.img4{
+
+button.img4 {
     background-image: url(images/img4.jpg);
     background-size: cover;
 }
 
-button:hover{
+button:hover {
     background-color: #ceb1404b;
 }
-.division1{
+
+.division1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.division2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +79,8 @@ button:hover{
     max-width: 90%;
     margin: 0 auto;
 }
-.division2{
+
+.division3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +89,8 @@ button:hover{
     max-width: 90%;
     margin: 0 auto;
 }
-.division3{
+
+.division4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,16 +99,8 @@ button:hover{
     max-width: 90%;
     margin: 0 auto;
 }
-.division4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    max-width: 90%;
-    margin: 0 auto;
-}
-#hero{
+
+#hero {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,91 +112,98 @@ button:hover{
 
 }
 
-
- .heroTitles{
+.heroTitles {
     margin-top: -15px;
 }
 
-header{
+header {
     background-color: rgba(0, 0, 0, 0.596);
 }
 
-header .logo{
+header .logo {
     margin: 0px;
     padding: 25px 30px;
     font-weight: bold;
     color: #FFDE59;
     font-family: "Anonymous Pro", monospace;
 }
-header .container{
+
+header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 21px;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: #FFDE59;
-    font-family: "Anonymous Pro", monospace; 
+    font-family: "Anonymous Pro", monospace;
 }
-header a:hover{
+
+header a:hover {
     color: #ceb1404b;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
-h1{
+
+h1 {
     font-size: 8em;
     color: #FFDE59;
     font-family: "Rubik Scribble", system-ui;
 }
-h2{
+
+h2 {
     font-size: 2.5em;
     color: #FFDE59;
     font-family: "Libre Franklin", sans-serif;
 }
-h3{
+
+h3 {
     font-size: .9em;
     color: #FFDE59;
     font-family: "Anonymous Pro", monospace;
 }
-body{
+
+body {
     margin: 0;
     background-color: black;
 }
 
-#hero .name{
+#hero .name {
     display: flex;
 }
-.heroName{
+
+.heroName {
     text-align: center;
     padding: 100px 0px;
     font-size: 9vh;
 }
 
 
-#phrase .container{
+#phrase .container {
     text-align: center;
     padding: -5px 12px;
     margin-top: 75px;
     font-size: 4vh;
 }
 
-#phrase .container2{
+#phrase .container2 {
     text-align: center;
     padding: -5px 12px;
-    
+
 }
+
 @media (min-width: 768px) {
 
     header {
@@ -220,12 +254,4 @@ body{
         font-size: 3vh;
         padding-right: 200px;
     }
-    button.im4:hover{
-        color: #ceb1404b;
-    }
-    
-
-
-
-
 }
