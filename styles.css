@@ -12,13 +12,22 @@ button.img1{
     background-image: url(images/img1.jpg);
     background-size: cover;
 }
+button.im1:hover{
+    color: #ceb1404b;
+}
 button.img2{
     background-image: url(images/img2.jpg);
     background-size: cover;
 }
+button.im2:hover{
+    color: #ceb1404b;
+}
 button.img3{
     background-image: url(images/img3.jpg);
     background-size: cover;
+}
+button.im3:hover{
+    color: #ceb1404b;
 }
 button.img4{
     background-image: url(images/img4.jpg);
@@ -28,7 +37,34 @@ button.img4{
 button:hover{
     background-color: #ceb1404b;
 }
-.divisiones{
+.division1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.division2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.division3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.division4{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,6 +84,7 @@ button:hover{
     background-position: center center;
 
 }
+
 
  .heroTitles{
     margin-top: -15px;
@@ -133,8 +170,62 @@ body{
     padding: -5px 12px;
     
 }
+@media (min-width: 768px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    .divisiones {
+        padding-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        width: 275px;
+        height: 275px;
+    }
+
+    .heroName {
+        text-align: center;
+        font-size: 25vh;
+        margin-top: -125px;
+
+    }
+
+    #phrase .container {
+        text-align: center;
+        padding: -5px 12px;
+        margin-top: 255px;
+        font-size: 11vh;
+    }
+
+    #phrase .container2 {
+        text-align: right;
+        padding: -5px 12px;
+        margin-bottom: 155px;
+        font-size: 3vh;
+        padding-right: 200px;
+    }
+    button.im4:hover{
+        color: #ceb1404b;
+    }
+    
 
 
 
 
-
+}
